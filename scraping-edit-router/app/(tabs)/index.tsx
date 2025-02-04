@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Platform } from "react-native";
+import { Image, StyleSheet, Platform, View, Text } from "react-native";
 
 import { HelloWave } from "@/components/HelloWave";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
@@ -16,6 +16,9 @@ export default function HomeScreen() {
         />
       }
     >
+      <View>
+        <Text className="text-red-500">Hola Mundo probando NativeWind!</Text>
+      </View>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">IMPRIMIR QR</ThemedText>
       </ThemedView>
